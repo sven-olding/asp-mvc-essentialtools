@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 
 namespace EssentialTools.Models
 {
     public class ShoppingCart
     {
-        private LinqValueCalculator calc;
+        private IValueCalculator calc;
 
-        public ShoppingCart(LinqValueCalculator calc)
+        public ShoppingCart(IValueCalculator calc)
         {
             this.calc = calc;
         }
